@@ -1,0 +1,236 @@
+#menu-slider {
+    height: 100%;
+    width: 95%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    color: rgb(2, 2, 2);
+    overflow-x: hidden;
+    padding: 3rem;
+    border-radius: 15px 0px 15px 0px; 
+    font-weight: normal;
+    background-color: #ffffff;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    box-shadow: -10px 0px 30px #030303;
+    opacity: 0;
+
+}
+
+.sidenav-close{
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+    opacity: 0!important;
+    transition: opacity 2s ease-in-out;
+}
+
+.sidenav-open{
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+    z-index: 20;
+    opacity: 1!important;
+}
+
+    @keyframes slide-in {
+        100% { transform: translateX(0%); }
+    }
+
+    @-webkit-keyframes slide-in {
+        100% { -webkit-transform: translateX(0%); }
+    }
+        
+    @keyframes slide-out {
+        0% { transform: translateX(0%); }
+        100% { transform: translateX(100%); }
+    }
+
+    @-webkit-keyframes slide-out {
+        0% { -webkit-transform: translateX(0%); }
+        100% { -webkit-transform: translateX(100%); }
+    }
+
+.main-background{
+    background-repeat: no-repeat; 
+    background-position: left top; 
+    background-size:250px;
+    padding-right: 30px;
+    padding-left: 20px;
+}
+
+.closebtn {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    text-decoration: none;
+    color: green;
+
+    text-align: center;
+    box-sizing: border-box;
+        
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+    .closebtn:hover {
+        color: rgb(0, 204, 0);
+        border-radius: 2px;
+        border: 1px solid;
+    }
+
+.menu_leaf {
+    color: green;
+    font-size: 1.2rem;
+    padding-right: 0.5rem;
+}
+
+.rest-menu-list-item {
+    display: inline-block;
+    margin-right: 0.8rem;
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 1px white, 0 0 25px white;
+}
+.rest-menu-list-item-selected {
+    display: inline-block;
+    margin-right: 0.8rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px white, 0 0 25px white;
+}
+
+
+
+.sidenav-open p{
+margin: 0px;
+padding: 0px;
+}
+
+
+
+.menu-items {
+max-width: 1200px;
+padding: 0% 10% 0% 10%;
+}
+    @media screen and (max-width: 1200px) {
+        .menu-items { padding: 0.5rem; }
+    }
+.prices {
+    clear: right;
+}
+
+.price {
+    display: inline-block;
+    font-weight: bold;
+    text-align: right; 
+}
+
+
+
+.loader {
+    display: inline-block;
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid green;
+    border-bottom: 10px solid green;
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+    @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+
+.search-div{
+    width: 100%;
+}
+.search-form{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+}
+.search-form-input{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        font-size: 0.7rem;
+    }
+        ::-moz-placeholder { /* Firefox 19+ */
+    font-size: 0.7rem;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+        font-size: 0.7rem;
+    }
+    :-moz-placeholder { /* Firefox 18- */
+        font-size: 0.7rem;
+    }
+
+.search_hightlight{
+    background-color: lightgreen;
+}
+
+.form-control:focus {
+    outline: 0 !important;
+    border-color: initial;
+    box-shadow: none;
+}
+.search-btn {
+    background-color: white;
+}
+.search_example{
+    color: rgb(0, 43, 0);
+    text-decoration: underline;
+}
+.search_example:hover{
+    color: green;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.menu_thumb{
+    max-width: 100px;
+    padding: 1px;
+    border: 1px dotted grey;
+}
+    .menu_thumb:hover{
+        cursor: pointer;
+    }
+
+.menu-item-title{
+    text-transform: uppercase;   
+    font-size: 1.2rem;
+    border-bottom: 1px dotted grey;
+}
+
+
+/* scrollbar for webkit
+width */
+.sidenav-open::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Track */
+.sidenav-open::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 2px;
+    background: grey;
+}
+
+/* Handle */
+.sidenav-open::-webkit-scrollbar-thumb {
+    background: rgb(0, 105, 0); 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.sidenav-open::-webkit-scrollbar-thumb:hover {
+    background: green; 
+}

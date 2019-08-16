@@ -1,0 +1,43 @@
+{
+    "name": "ambrosia-react",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@devloco/react-scripts-wptheme": "3.0.1-wptheme-3.0.5",
+        "axios": "^0.19.0",
+        "query-string": "^5.1.1",
+        "react": "^16.8.6",
+        "react-app-polyfill": "^1.0.1",
+        "react-dom": "^16.8.6",
+        "react-image-lightbox": "^5.1.0",
+        "react-router-dom": "^5.0.1",
+        "shortid": "^2.2.14"
+    },
+    "scripts": {
+        "crabuild": "react-scripts build",
+        "craeject": "react-scripts eject",
+        "crastart": "react-scripts start",
+        "cratest": "react-scripts test",
+        "build": "wptheme-scripts build",
+        "start": "wptheme-scripts start",
+        "wpbuild": "wptheme-scripts wpbuild",
+        "wpstart": "wptheme-scripts wpstart"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "homepage": "/ambr2/wp-content/themes/ambrosia-react",
+    "browserLaunchTo": "http://localhost/ambr2/"
+}

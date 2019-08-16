@@ -1,0 +1,83 @@
+/*
+Theme name: Ambrosia Restaurant & Bar
+Theme URI: ambrosia.co.nz
+Author: Sergey Lyaskovskiy lightgrey1238@gmail.com
+Description: Ambrosia Restaurant & Bar Rotorua Theme
+Version: 2.0
+*/
+
+/*div{
+	border-style: solid;
+	border-width: 1px;
+}*/
+
+html,body {
+    height: 100%;
+    padding-top: 10px;
+}
+
+/*used for scrollReaveal library*/
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #2e2419;
+    color: #4d2600;
+  }
+  .img-logo{
+    max-height: 250px;
+  }
+  a{
+      text-decoration: underline;
+       color: #4d2600;
+  }
+  a:hover{
+      color: green;
+      text-decoration: none;
+  }
+  .href-no-underline{
+      text-decoration: none;
+  }
+  .white{
+    background-color: #FFFFFF;
+  }
+  .white-transparent-much{
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 0.2rem;
+  }
+  .white-transparent-few{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 0.2rem;
+  }
+  .text-shadow{
+       text-shadow: 1px 1px 1px white, 0 0 25px white;
+  }
+  
+
+  .div-specials{
+      border-style: solid;
+      border-width: 0.2rem 0 0.2rem 0;
+      border-color: green;
+  }
+  hr {
+      display: block;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      margin-left: auto;
+      margin-right: auto;
+      border-style: dotted;
+      border-width: 1px 0px 0px 0px;
+      border-color: green;
+  }
+  
+  .header-specials{
+      height: 3.2rem;
+      line-height: 1.5rem;
+      overflow: hidden;
+      vertical-align: middle;
+      border-bottom: dotted 1px green;
+  }
+
+  
